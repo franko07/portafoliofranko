@@ -1,0 +1,31 @@
+.containerBtn{
+    background-color: #2e6329;
+    border: 2px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50px;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.containerBtn :hover {
+    transform: scale(1.8);
+    transition: 0.5s;
+}
+
+.btn {
+    width: 40px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
